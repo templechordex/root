@@ -12,6 +12,7 @@
 </script>
 <meta charset="UTF-8">
 <title>LINK - 3D Teraoka.COM</title>
+<meta name="description" content="LINK - 3D Teraoka.COM - AnjiTeraoka.COM">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -33,112 +34,50 @@
 </style>
 
 
-<script src="https://use.fontawesome.com/926fe18a63.js"></script>
-<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<script>
-jQuery(function($){
-$('.menu').on('click',function(){
-    $('.menu__line').toggleClass('active');
-    $('.gnav').fadeToggle();
-});
-});
-</script>
-
-<script>
-	$(function(){
-    $(window).scroll(function (){
-        $('.conB').each(function(){
-            var elemPos = $(this).offset().top;
-            var scroll = $(window).scrollTop();
-            var windowHeight = $(window).height();
-            if (scroll > elemPos - windowHeight + 150){
-                $(this).addClass('effect-scroll');
-            }
-        });
-    });
-});
-	</script>
-
-<script>
-$(function(){
-  $('a[href^="#"]').click(function(){
-    var speed = 500;
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
-    return false;
-  });
-});
-</script>
 
 
 
-<script>
-//ウィンドウの高さを取得する
-var window_h = $(window).height();
-
-//スクロールイベント
-$(window).on("scroll", function() {
-  
-  //スクロールの位置を取得する
-  var scroll_top = $(window).scrollTop();
- 
-  $(".conC").each(function() {
-    //各box要素のtopの位置を取得する
-    var elem_pos = $(this).offset().top;
-    
-    //どのタイミングでフェードインさせるか
-    if (scroll_top >= elem_pos - window_h + 300) {
-      $(this).addClass("fadein");　//特定の位置を超えたらクラスを追加
-    } else {
-      $(this).removeClass("fadein"); //そうでない場合はクラスを削除
-    }
-  });
-});
-</script>
 
 
 
+
+
+
+
+<script defer src="js/site.js"></script>
 </head>
 <body>
 
 <header>
-<a class="menu">
+<button class="menu" type="button" aria-label="メニューを開閉" aria-controls="global-nav" aria-expanded="false">
         <span class="menu__line menu__line--top"></span>
         <span class="menu__line menu__line--center"></span>
         <span class="menu__line menu__line--bottom"></span>
-    </a>
-    <div class="gnav">
+    </button>
+    <div class="gnav" id="global-nav">
 <div class="container">
 	<div class="gA">
 		<h2>3D Teraoka.COM</h2>
 		<p>
-		<a href="http://anjiteraoka.com/3d/">3D Teraoka.com/</a>
+		<a href="https://anjiteraoka.com/3d/">3D Teraoka.com/</a>
 		</p>
 
 		<nav class="gD">
 			<ul>
-				<li><a href="https://twitter.com/anji_teraoka" target="_blank" class="sns">
-					<span class="fa fa-twitter"
-					 title="Twitter"></span>
+				<li><a href="https://twitter.com/anji_teraoka" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-twitter" aria-hidden="true"></span><span class="sr-only">Twitter</span>
 				</a></li>
 
-				<li><a href="https://www.instagram.com/anji_teraoka/" target="_blank" class="sns">
-					<span class="fa fa-instagram"
-					 title="Instagram"></span>
+				<li><a href="https://www.instagram.com/anji_teraoka/" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-instagram" aria-hidden="true"></span><span class="sr-only">Instagram</span>
 				</a></li>
 
-				<li><a href="https://www.youtube.com/channel/UCvtMMAForO_xiLVogFC0wxw" target="_blank" class="sns">
-					<span class="fa fa-youtube"
-					 title="YouTube"></span>
+				<li><a href="https://www.youtube.com/channel/UCvtMMAForO_xiLVogFC0wxw" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-youtube" aria-hidden="true"></span><span class="sr-only">YouTube</span>
 				</a></li>
 
-                                <li><a href="https://big-up.style/artists/165623/tune_packages" target="_blank" class="sns">
-					<span class="fa fa-play"
-					 title="Play"></span>
+                                <li><a href="https://big-up.style/artists/165623/tune_packages" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-play" aria-hidden="true"></span><span class="sr-only">配信リンク</span>
 				</a></li>
 			</ul>
 		</nav>
@@ -218,15 +157,15 @@ $(window).on("scroll", function() {
 
 <p>Album / 「DOWN to EARTH」 - our hours
 <br>：REC, MIX, MASTERING
-<br><a href="https://holiday2014.thebase.in/items/75559005"target="_blank">shop link</a></p>
+<br><a href="https://holiday2014.thebase.in/items/75559005"target="_blank" rel="noopener noreferrer">shop link</a></p>
 
 <p>Album / 「オリジナルど底辺のカス」 - zoe,GIMMIE,anji
 <br> : REC, MIX, MASTERING
-<br><a href="https://thisone.theshop.jp/items/64168634"target="_blank">shop link</a></p>
+<br><a href="https://thisone.theshop.jp/items/64168634"target="_blank" rel="noopener noreferrer">shop link</a></p>
 
 <p>Podcast / 「NME Japan 編集長がちょっと思っていること」
 <br> : Opening MUSIC
-<br><a href="https://livelovers.jp/list/podcast/28/"target="_blank">web link</a></p>
+<br><a href="https://livelovers.jp/list/podcast/28/"target="_blank" rel="noopener noreferrer">web link</a></p>
 </div></div>
 
 
@@ -274,29 +213,25 @@ $(window).on("scroll", function() {
 	<div class="footA">
 		<h2>3D Teraoka.COM</h2>
 		<p>
-		<a href="http://anjiteraoka.com/3d/">3D Teraoka.com/</a>
+		<a href="https://anjiteraoka.com/3d/">3D Teraoka.com/</a>
 		</p>
 
 		<nav class="footD">
 			<ul>
-				<li><a href="https://twitter.com/anji_teraoka" target="_blank" class="sns">
-					<span class="fa fa-twitter"
-					 title="Twitter"></span>
+				<li><a href="https://twitter.com/anji_teraoka" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-twitter" aria-hidden="true"></span><span class="sr-only">Twitter</span>
 				</a></li>
 
-				<li><a href="https://www.instagram.com/anji_teraoka/" target="_blank" class="sns">
-					<span class="fa fa-instagram"
-					 title="Instagram"></span>
+				<li><a href="https://www.instagram.com/anji_teraoka/" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-instagram" aria-hidden="true"></span><span class="sr-only">Instagram</span>
 				</a></li>
 
-				<li><a href="https://www.youtube.com/channel/UCvtMMAForO_xiLVogFC0wxw" target="_blank" class="sns">
-					<span class="fa fa-youtube"
-					 title="YouTube"></span>
+				<li><a href="https://www.youtube.com/channel/UCvtMMAForO_xiLVogFC0wxw" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-youtube" aria-hidden="true"></span><span class="sr-only">YouTube</span>
 				</a></li>
 
-                                <li><a href="https://big-up.style/artists/165623/tune_packages" target="_blank" class="sns">
-					<span class="fa fa-play"
-					 title="Play"></span>
+                                <li><a href="https://big-up.style/artists/165623/tune_packages" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-play" aria-hidden="true"></span><span class="sr-only">配信リンク</span>
 				</a></li>
 			</ul>
 		</nav>
@@ -318,12 +253,6 @@ $(window).on("scroll", function() {
 </div>
 </footer>
 
-<script src="particles.js"></script>
-<script src="setting.js"></script>
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="js/3-2-3-1.js"></script>
 
 </body>
 </html>

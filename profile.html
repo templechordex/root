@@ -12,6 +12,7 @@
 </script>
 <meta charset="UTF-8">
 <title>PROFILE | 寺岡アンジ</title>
+<meta name="description" content="PROFILE | 寺岡アンジ - AnjiTeraoka.COM">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -33,92 +34,44 @@
 </style>
 
 
-<script src="https://use.fontawesome.com/926fe18a63.js"></script>
-<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-
-<script>
-jQuery(function($){
-$('.menu').on('click',function(){
-    $('.menu__line').toggleClass('active');
-    $('.gnav').fadeToggle();
-});
-});
-</script>
-
-<script>
-	$(function(){
-    $(window).scroll(function (){
-        $('.conB').each(function(){
-            var elemPos = $(this).offset().top;
-            var scroll = $(window).scrollTop();
-            var windowHeight = $(window).height();
-            if (scroll > elemPos - windowHeight + 150){
-                $(this).addClass('effect-scroll');
-            }
-        });
-    });
-});
-	</script>
-
-
-<script>
-//ウィンドウの高さを取得する
-var window_h = $(window).height();
-
-//スクロールイベント
-$(window).on("scroll", function() {
-  
-  //スクロールの位置を取得する
-  var scroll_top = $(window).scrollTop();
- 
-  $(".conC").each(function() {
-    //各box要素のtopの位置を取得する
-    var elem_pos = $(this).offset().top;
-    
-    //どのタイミングでフェードインさせるか
-    if (scroll_top >= elem_pos - window_h + 300) {
-      $(this).addClass("fadein");　//特定の位置を超えたらクラスを追加
-    } else {
-      $(this).removeClass("fadein"); //そうでない場合はクラスを削除
-    }
-  });
-});
-</script>
 
 
 
+
+
+
+
+
+<script defer src="js/site.js"></script>
 </head>
 <body>
 
 <header>
-<a class="menu">
+<button class="menu" type="button" aria-label="メニューを開閉" aria-controls="global-nav" aria-expanded="false">
         <span class="menu__line menu__line--top"></span>
         <span class="menu__line menu__line--center"></span>
         <span class="menu__line menu__line--bottom"></span>
-    </a>
-    <div class="gnav">
+    </button>
+    <div class="gnav" id="global-nav">
 <div class="container">
 	<div class="gA">
 		<h2>寺岡アンジのWEB</h2>
 		<p>
-		<a href="http://anjiteraoka.com/">http://anjiteraoka.com/</a>
+		<a href="https://anjiteraoka.com/">https://anjiteraoka.com/</a>
 		</p>
 
 		<nav class="gD">
 			<ul>
-				<li><a href="https://twitter.com/anji_teraoka" target="_blank" class="sns">
-					<span class="fa fa-twitter"
-					 title="Twitter"></span>
+				<li><a href="https://twitter.com/anji_teraoka" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-twitter" aria-hidden="true"></span><span class="sr-only">Twitter</span>
 				</a></li>
 
-				<li><a href="https://www.instagram.com/anji_teraoka/" target="_blank" class="sns">
-					<span class="fa fa-instagram"
-					 title="Instagram"></span>
+				<li><a href="https://www.instagram.com/anji_teraoka/" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-instagram" aria-hidden="true"></span><span class="sr-only">Instagram</span>
 				</a></li>
 
-				<li><a href="https://www.youtube.com/channel/UCvtMMAForO_xiLVogFC0wxw" target="_blank" class="sns">
-					<span class="fa fa-youtube"
-					 title="YouTube"></span>
+				<li><a href="https://www.youtube.com/channel/UCvtMMAForO_xiLVogFC0wxw" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-youtube" aria-hidden="true"></span><span class="sr-only">YouTube</span>
 				</a></li>
 			</ul>
 		</nav>
@@ -180,24 +133,21 @@ $(window).on("scroll", function() {
 	<div class="footA">
 		<h2>寺岡アンジのWEB</h2>
 		<p>
-		<a href="http://anjiteraoka.com/">http://anjiteraoka.com/</a>
+		<a href="https://anjiteraoka.com/">https://anjiteraoka.com/</a>
 		</p>
 
 		<nav class="footD">
 			<ul>
-				<li><a href="https://twitter.com/anji_teraoka" target="_blank" class="sns">
-					<span class="fa fa-twitter"
-					 title="Twitter"></span>
+				<li><a href="https://twitter.com/anji_teraoka" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-twitter" aria-hidden="true"></span><span class="sr-only">Twitter</span>
 				</a></li>
 
-				<li><a href="https://www.instagram.com/anji_teraoka/" target="_blank" class="sns">
-					<span class="fa fa-instagram"
-					 title="Instagram"></span>
+				<li><a href="https://www.instagram.com/anji_teraoka/" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-instagram" aria-hidden="true"></span><span class="sr-only">Instagram</span>
 				</a></li>
 
-				<li><a href="https://www.youtube.com/channel/UCvtMMAForO_xiLVogFC0wxw" target="_blank" class="sns">
-					<span class="fa fa-youtube"
-					 title="YouTube"></span>
+				<li><a href="https://www.youtube.com/channel/UCvtMMAForO_xiLVogFC0wxw" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-youtube" aria-hidden="true"></span><span class="sr-only">YouTube</span>
 				</a></li>
 			</ul>
 		</nav>
@@ -221,8 +171,6 @@ $(window).on("scroll", function() {
 </div>
 </footer>
 
-<script src="particles.js"></script>
-<script src="setting.js"></script>
 
 </body>
 </html>

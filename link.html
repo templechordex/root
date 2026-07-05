@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHJ2TZVH37"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GHJ2TZVH37');
+</script>
+<meta charset="UTF-8">
+<title>LINK - 3D Teraoka.COM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<link rel="icon" type="image/png" href="img/favicon.png">
+
+
+<style>
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+</style>
+
+
+<script src="https://use.fontawesome.com/926fe18a63.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+jQuery(function($){
+$('.menu').on('click',function(){
+    $('.menu__line').toggleClass('active');
+    $('.gnav').fadeToggle();
+});
+});
+</script>
+
+<script>
+	$(function(){
+    $(window).scroll(function (){
+        $('.conB').each(function(){
+            var elemPos = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > elemPos - windowHeight + 150){
+                $(this).addClass('effect-scroll');
+            }
+        });
+    });
+});
+	</script>
+
+<script>
+$(function(){
+  $('a[href^="#"]').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+</script>
+
+
+
+<script>
+//ウィンドウの高さを取得する
+var window_h = $(window).height();
+
+//スクロールイベント
+$(window).on("scroll", function() {
+  
+  //スクロールの位置を取得する
+  var scroll_top = $(window).scrollTop();
+ 
+  $(".conC").each(function() {
+    //各box要素のtopの位置を取得する
+    var elem_pos = $(this).offset().top;
+    
+    //どのタイミングでフェードインさせるか
+    if (scroll_top >= elem_pos - window_h + 300) {
+      $(this).addClass("fadein");　//特定の位置を超えたらクラスを追加
+    } else {
+      $(this).removeClass("fadein"); //そうでない場合はクラスを削除
+    }
+  });
+});
+</script>
+
+
+
+</head>
+<body>
+
+<header>
+<a class="menu">
+        <span class="menu__line menu__line--top"></span>
+        <span class="menu__line menu__line--center"></span>
+        <span class="menu__line menu__line--bottom"></span>
+    </a>
+    <div class="gnav">
+<div class="container">
+	<div class="gA">
+		<h2>3D Teraoka.COM</h2>
+		<p>
+		<a href="http://anjiteraoka.com/3d/">3D Teraoka.com/</a>
+		</p>
+
+		<nav class="gD">
+			<ul>
+				<li><a href="https://twitter.com/anji_teraoka" target="_blank" class="sns">
+					<span class="fa fa-twitter"
+					 title="Twitter"></span>
+				</a></li>
+
+				<li><a href="https://www.instagram.com/anji_teraoka/" target="_blank" class="sns">
+					<span class="fa fa-instagram"
+					 title="Instagram"></span>
+				</a></li>
+
+				<li><a href="https://www.youtube.com/channel/UCvtMMAForO_xiLVogFC0wxw" target="_blank" class="sns">
+					<span class="fa fa-youtube"
+					 title="YouTube"></span>
+				</a></li>
+
+                                <li><a href="https://big-up.style/artists/165623/tune_packages" target="_blank" class="sns">
+					<span class="fa fa-play"
+					 title="Play"></span>
+				</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<nav class="gB">
+		<div>
+			<h3>MENU</h3>
+			<ul>
+			<li><a href="/3d/index.html">3D HOME</a></li>
+			</ul>
+
+		</div>
+	</nav>
+
+	<div class="gC">
+		&#169; 3D Teraoka.COM All rights reserved.
+	</div>
+    </div>
+</div>
+</header>
+
+<section class="conB">
+<h1>LINK - 3D Teraoka.COM</h1>
+
+
+<div class="container">
+<div class="text2w">
+<h2>目次</h2>
+<a href="#1">MUSIC</a><br><br>
+<a href="#2">WORKS</a><br><br>
+<a href="#3">PROFILE</a><br>
+</div></div>
+
+
+<h1 id="1">MUSIC</h1>
+<div class="container">
+		<div class="text">
+<a href="10do.html"><img src="img/10do.jpg" class="jacket fadeUpTrigger" alt="10do" title="10do"></a>
+			<h2>『10ド』</h2>
+			<p class="fadeUpTrigger">1st EP / 2022.12.09<br>#POP</p>
+</div>
+
+		<div class="text">
+<a href="ssp.html"><img src="img/ssp.jpg" class="jacket fadeUpTrigger" alt="ssp" title="ssp"></a>
+			<h2>『STARSHIP PIE』</h2>
+			<p class="fadeUpTrigger">2nd Album / 2022.09.08<br>#SPACE #PSYCHEDELIC</p>
+		</div>
+	</div>
+
+<div class="container">
+		<div class="text">
+			<a href="muzak.html"><img src="img/muzak.png" class="jacket fadeUpTrigger" alt="muuzak" title="muzak"></a>
+			<h2>『Muzak』</h2>
+			<p class="fadeUpTrigger">1st Single / 2021.05.14<br>#ELECTRO #POP</p>
+		</div>
+	
+		<div class="text">
+			<a href="pm.html"><img src="img/parkminds.jpg" class="jacket fadeUpTrigger" alt="parkminds" title="parkminds"></a>
+			<h2>『PARK MINDS』</h2>
+			<p class="fadeUpTrigger">1st Album / 2020.11.01<br>#PSYCHEDELIC #POP</p>
+		</div>
+	</div>
+
+	
+		</div>
+
+<h1 id="2">WORKS（抜粋）</h1>
+<div class="container">
+	<div class="text2">
+
+<p>Song / 「TAKE it JOKE」 - シポロ
+<br>：REC, MIX, MASTERING</p>
+
+<p>Song / 「ハルトユメノトチュウ」、「いつかのように」、「浮かぶ」 - in sea hole
+<br>：REC, MIX, MASTERING</p>
+
+<p>Album / 「DOWN to EARTH」 - our hours
+<br>：REC, MIX, MASTERING
+<br><a href="https://holiday2014.thebase.in/items/75559005"target="_blank">shop link</a></p>
+
+<p>Album / 「オリジナルど底辺のカス」 - zoe,GIMMIE,anji
+<br> : REC, MIX, MASTERING
+<br><a href="https://thisone.theshop.jp/items/64168634"target="_blank">shop link</a></p>
+
+<p>Podcast / 「NME Japan 編集長がちょっと思っていること」
+<br> : Opening MUSIC
+<br><a href="https://livelovers.jp/list/podcast/28/"target="_blank">web link</a></p>
+</div></div>
+
+
+<h1 id="3">PROFILE</h1>
+<div class="container">
+	<div class="text2">
+<h2>寺岡アンジ</h2>
+<p>愛知県一宮市出身・東京都在住。
+<br>2020年より寺岡アンジ名義での音源制作を開始。
+<br>作詞・作曲から録音・ミキシングまで音源制作に関わるほぼ全ての工程を担当。
+</p>
+<h2>年表</h2>
+<p>1996.11　愛知県一宮市にて誕生。
+<br>2017.04　音響・録音系専門学校を卒業し上京。
+<br>2019.xx　PSYCHE ME HANA BANDを結成するも活動が順調に進まず挫折。
+<br>2020.xx　「ビーチボーイズみたいな音楽作って」の一言により寺岡アンジ名義での音源制作を開始。
+<br>2020.11　1st Album『PARK MINDS』を公開。
+<br>2021.05　1st Single「Muzak」を公開。
+<br>2021.xx　our hoursに加入、活動開始。
+<br>2022.09　2nd Album『STARSHIP PIE』を公開。
+<br>2022.12　1st EP『10ド』を公開。
+</p>
+
+</div>
+</div>
+
+<div class="container">
+<div class="text">
+<a href="#">PAGE TOP</a>
+</div></div>
+
+
+
+<div class="container">
+<div class="text">
+<a href="/3d/index.html">HOME</a>
+</div>
+</div>
+
+</section>
+
+<footer>
+<div class="container">
+
+	<div class="footA">
+		<h2>3D Teraoka.COM</h2>
+		<p>
+		<a href="http://anjiteraoka.com/3d/">3D Teraoka.com/</a>
+		</p>
+
+		<nav class="footD">
+			<ul>
+				<li><a href="https://twitter.com/anji_teraoka" target="_blank" class="sns">
+					<span class="fa fa-twitter"
+					 title="Twitter"></span>
+				</a></li>
+
+				<li><a href="https://www.instagram.com/anji_teraoka/" target="_blank" class="sns">
+					<span class="fa fa-instagram"
+					 title="Instagram"></span>
+				</a></li>
+
+				<li><a href="https://www.youtube.com/channel/UCvtMMAForO_xiLVogFC0wxw" target="_blank" class="sns">
+					<span class="fa fa-youtube"
+					 title="YouTube"></span>
+				</a></li>
+
+                                <li><a href="https://big-up.style/artists/165623/tune_packages" target="_blank" class="sns">
+					<span class="fa fa-play"
+					 title="Play"></span>
+				</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<nav class="footB">
+		<div>
+<h3>MENU</h3>
+			<ul>
+			<li><a href="/3d/index.html">3D HOME</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="footC">
+		&#169; 3D Teraoka.COM All rights reserved.
+	</div>
+
+</div>
+</footer>
+
+<script src="particles.js"></script>
+<script src="setting.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/3-2-3-1.js"></script>
+
+</body>
+</html>

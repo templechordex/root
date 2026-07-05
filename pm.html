@@ -14,6 +14,7 @@
 
 <meta charset="UTF-8">
 <title>1st Album『PARK MINDS』</title>
+<meta name="description" content="1st Album『PARK MINDS』 - AnjiTeraoka.COM">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -35,65 +36,41 @@
 </style>
 
 
-<script src="https://use.fontawesome.com/926fe18a63.js"></script>
-<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<script>
-jQuery(function($){
-$('.menu').on('click',function(){
-    $('.menu__line').toggleClass('active');
-    $('.gnav').fadeToggle();
-});
-});
-</script>
-
-<script>
-$(function(){
-  $('a[href^="#"]').click(function(){
-    var speed = 500;
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
-    return false;
-  });
-});
-</script>
 
 
+
+
+
+<script defer src="js/site.js"></script>
 </head>
 <body>
 
 <header>
-<a class="menu">
+<button class="menu" type="button" aria-label="メニューを開閉" aria-controls="global-nav" aria-expanded="false">
         <span class="menu__line menu__line--top"></span>
         <span class="menu__line menu__line--center"></span>
         <span class="menu__line menu__line--bottom"></span>
-    </a>
-    <div class="gnav">
+    </button>
+    <div class="gnav" id="global-nav">
 <div class="container">
 	<div class="gA">
 		<h2>AnjiTeraoka.COM</h2>
 		<p>
-		<a href="http://anjiteraoka.com/">http://anjiteraoka.com/</a>
+		<a href="https://anjiteraoka.com/">https://anjiteraoka.com/</a>
 		</p>
 
 		<nav class="gD">
 			<ul>
-				<li><a href="https://twitter.com/anji_teraoka" target="_blank" class="sns">
-					<span class="fa fa-twitter"
-					 title="Twitter"></span>
+				<li><a href="https://twitter.com/anji_teraoka" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-twitter" aria-hidden="true"></span><span class="sr-only">Twitter</span>
 				</a></li>
 
-				<li><a href="https://www.instagram.com/anji_teraoka/" target="_blank" class="sns">
-					<span class="fa fa-instagram"
-					 title="Instagram"></span>
+				<li><a href="https://www.instagram.com/anji_teraoka/" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-instagram" aria-hidden="true"></span><span class="sr-only">Instagram</span>
 				</a></li>
 
-				<li><a href="https://www.youtube.com/channel/UCvtMMAForO_xiLVogFC0wxw" target="_blank" class="sns">
-					<span class="fa fa-youtube"
-					 title="YouTube"></span>
+				<li><a href="https://www.youtube.com/channel/UCvtMMAForO_xiLVogFC0wxw" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-youtube" aria-hidden="true"></span><span class="sr-only">YouTube</span>
 				</a></li>
 			</ul>
 		</nav>
@@ -122,7 +99,7 @@ $(function(){
 <div class="container">
 <div class="text2">
 <p>2020.11.1公開、1st Album『PARK MINDS』について、まとめてあります。
-<br><a href="https://big-up.style/wa9yJdmZTf" target="_blank">こちら</a>より各サブスク（Apple Music , Spotify等）から聴くことができます。</p>
+<br><a href="https://big-up.style/wa9yJdmZTf" target="_blank" rel="noopener noreferrer">こちら</a>より各サブスク（Apple Music , Spotify等）から聴くことができます。</p>
 </div></div>
 
 <div class="container">
@@ -137,7 +114,7 @@ $(function(){
 <h1 id="2">MV、bandcamp再生プレイヤー</h1>
 <div class="container">
 <div class="youtube">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oPtixHpBpVE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oPtixHpBpVE?rel=0" title="PARK MINDS music video" loading="lazy" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div></div>
 
 <div class="container">
@@ -221,24 +198,21 @@ $(function(){
 	<div class="footA">
 		<h2>AnjiTeraoka.COM</h2>
 		<p>
-		<a href="http://anjiteraoka.com/">http://anjiteraoka.com/</a>
+		<a href="https://anjiteraoka.com/">https://anjiteraoka.com/</a>
 		</p>
 
 		<nav class="footD">
 			<ul>
-				<li><a href="https://twitter.com/anji_teraoka" target="_blank" class="sns">
-					<span class="fa fa-twitter"
-					 title="Twitter"></span>
+				<li><a href="https://twitter.com/anji_teraoka" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-twitter" aria-hidden="true"></span><span class="sr-only">Twitter</span>
 				</a></li>
 
-				<li><a href="https://www.instagram.com/anji_teraoka/" target="_blank" class="sns">
-					<span class="fa fa-instagram"
-					 title="Instagram"></span>
+				<li><a href="https://www.instagram.com/anji_teraoka/" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-instagram" aria-hidden="true"></span><span class="sr-only">Instagram</span>
 				</a></li>
 
-				<li><a href="https://www.youtube.com/channel/UCvtMMAForO_xiLVogFC0wxw" target="_blank" class="sns">
-					<span class="fa fa-youtube"
-					 title="YouTube"></span>
+				<li><a href="https://www.youtube.com/channel/UCvtMMAForO_xiLVogFC0wxw" target="_blank" rel="noopener noreferrer" class="sns">
+					<span class="fa fa-youtube" aria-hidden="true"></span><span class="sr-only">YouTube</span>
 				</a></li>
 			</ul>
 		</nav>
@@ -261,12 +235,6 @@ $(function(){
 </div>
 </footer>
 
-<script src="particles.js"></script>
-<script src="setting.js"></script>
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="js/3-2-3-1.js"></script>
 
 
 </body>

@@ -26,7 +26,7 @@
       <div class="${prefix}A">
         <h2>AnjiTeraoka.COM</h2>
         <p><a href="https://anjiteraoka.com/">https://anjiteraoka.com/</a></p>
-        <p class="site-summary">寺岡アンジ / Anji Teraoka：PSYCHEDELIC / DREAMY / POP / ROCK'N'ROLL と、音楽を体験するWeb作品。</p>
+        <p class="site-summary">寺岡アンジ / Anji Teraoka：宅録 / 音楽＋WEB</p>
         ${socialHtml(`${prefix}D`)}
       </div>
       <nav class="${prefix}B" aria-label="${prefix === 'g' ? 'Global' : 'Footer'} navigation">

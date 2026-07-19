@@ -164,7 +164,7 @@ footer .container {
   box-shadow: var(--shadow);
 }
 .hero { padding: clamp(32px, 7vw, 88px) clamp(20px, 5vw, 56px); text-align: center; }
-.hero::before { content: '★ ようこそ AnjiTeraoka.COM へ ★'; display: block; color: #ff00ff; background: #ffff00; border: 2px outset #fff; padding: 6px; margin-bottom: 18px; font-weight: 700; }
+.hero::before { content: '★ THANK YOU FOR COMING! ★'; display: block; color: #ff00ff; background: #ffff00; border: 2px outset #fff; padding: 6px; margin-bottom: 18px; font-weight: 700; }
 .hero__eyebrow { color: var(--color-accent); letter-spacing: .18em; font-size: .85rem; }
 .hero__title { font-size: clamp(2rem, 8vw, 5rem); line-height: 1; margin: 12px 0; }
 .hero__lead { max-width: 760px; margin-inline: auto; font-size: clamp(1rem, 2.4vw, 1.3rem); }

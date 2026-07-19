@@ -13,18 +13,20 @@
       ['LOG更新履歴', `${root}log.html`],
     ];
     const socials = [
-      ['Twitter', 'https://twitter.com/anji_teraoka', 'twitter'],
-      ['Instagram', 'https://www.instagram.com/anji_teraoka/', 'instagram'],
-      ['YouTube', 'https://www.youtube.com/channel/UCvtMMAForO_xiLVogFC0wxw', 'youtube'],
-      ['配信リンク', 'https://big-up.style/artists/165623/tune_packages', 'play'],
+      ['X', 'https://x.com/anji_teraoka', 'X'],
+      ['Instagram', 'https://www.instagram.com/anji_teraoka/', 'IG'],
+      ['Threads', 'https://www.threads.net/@anji_teraoka', 'TH'],
+      ['YouTube', 'https://www.youtube.com/@anji_teraoka', 'YT'],
+      ['Spotify', 'https://open.spotify.com/artist/31FfWVdW1IUmPgLoRbSGpS', 'SP'],
+      ['Apple Music', 'https://music.apple.com/jp/artist/1538384131', 'AM'],
     ];
-    const socialHtml = (className) => `<nav class="${className}" aria-label="SNS links"><ul>${socials.map(([label, href, icon]) => `<li><a href="${href}" target="_blank" rel="noopener noreferrer" class="sns"><span class="fa fa-${icon}" aria-hidden="true"></span><span class="sr-only">${label}</span></a></li>`).join('')}</ul></nav>`;
+    const socialHtml = (className) => `<nav class="${className}" aria-label="SNS・音楽配信リンク"><ul>${socials.map(([label, href, shortLabel]) => `<li><a href="${href}" target="_blank" rel="noopener noreferrer" class="sns"><span class="sns__short" aria-hidden="true">${shortLabel}</span><span class="sr-only">${label}</span></a></li>`).join('')}</ul></nav>`;
     const menuHtml = menuItems.map(([label, href]) => `<li><a href="${href}">${label}</a></li>`).join('');
     const siteBlock = (prefix) => `
       <div class="${prefix}A">
         <h2>AnjiTeraoka.COM</h2>
         <p><a href="https://anjiteraoka.com/">https://anjiteraoka.com/</a></p>
-        <p class="site-summary">寺岡アンジ / Anji Teraoka：宅録、ローファイ、サイケデリックポップ、録音・ミックス・マスタリング。</p>
+        <p class="site-summary">寺岡アンジ / Anji Teraoka：日本語のサイケデリック／ドリームポップと、音楽を体験するWeb作品。</p>
         ${socialHtml(`${prefix}D`)}
       </div>
       <nav class="${prefix}B" aria-label="${prefix === 'g' ? 'Global' : 'Footer'} navigation">

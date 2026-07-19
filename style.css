@@ -222,6 +222,8 @@ a:hover { text-decoration: none; }
 .jacket { width: 100%; max-width: 300px; aspect-ratio: 1 / 1; object-fit: cover; display: block; margin: 0 auto 16px; border-radius: 0; box-shadow: 0 10px 25px rgba(0,0,0,.5); }
 .tag-list { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 12px 0 0; list-style: none; }
 .tag-list li { border: 1px solid rgba(255,255,136,.5); border-radius: 999px; padding: .2rem .55rem; font-size: .82rem; color: var(--color-muted); }
+.streaming-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.streaming-links .button { flex: 1 1 120px; text-align: center; }
 .work-list { display: grid; gap: 16px; }
 .work-item { border-bottom: 1px solid rgba(0,255,102,.22); padding-bottom: 16px; }
 .work-item:last-child { border-bottom: 0; padding-bottom: 0; }

@@ -6,8 +6,8 @@
     const root = isNested ? '../' : '';
     const menuItems = [
       ['HOME', `${root}index.html`],
-      ['MUSIC作品一覧', `${root}music.html#music`],
-      ['WORKS制作実績', `${root}music.html#works`],
+      ['MUSIC', `${root}music.html#music`],
+      ['WORKS', `${root}music.html#works`],
       ['PROFILE', `${root}music.html#profile`],
       ['ABOUT ENGLISH', `${root}about/index.html`],
       ['LOG更新履歴', `${root}log.html`],
@@ -30,7 +30,7 @@
         ${socialHtml(`${prefix}D`)}
       </div>
       <nav class="${prefix}B" aria-label="${prefix === 'g' ? 'Global' : 'Footer'} navigation">
-        <div><h3>MENU - 作品と情報</h3><ul>${menuHtml}</ul></div>
+        <div><h3>MENU</h3><ul>${menuHtml}</ul></div>
       </nav>
       <div class="${prefix}C">&#169; AnjiTeraoka.COM All rights reserved.</div>`;
 

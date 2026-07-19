@@ -226,3 +226,9 @@ footer { border: 2px solid var(--color-accent); color: var(--color-accent-2); ba
   .anime { display: none; }
   .mainSite.is-loading { opacity: 1; }
 }
+
+.site-summary { color: var(--color-text); font-size: 13px; margin-top: 10px; }
+.ai-index { font-size: 14px; text-align: left; }
+.ai-index dl { display: grid; grid-template-columns: minmax(90px, 160px) 1fr; gap: 8px 12px; margin: 0; }
+.ai-index dt { color: var(--color-accent); font-weight: 700; }
+.ai-index dd { margin: 0; }

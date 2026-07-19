@@ -167,8 +167,8 @@ footer .container {
 .hero::before { content: '★ ようこそ AnjiTeraoka.COM へ ★'; display: block; color: #ff00ff; background: #ffff00; border: 2px outset #fff; padding: 6px; margin-bottom: 18px; font-weight: 700; }
 .hero__eyebrow { color: var(--color-accent); letter-spacing: .18em; font-size: .85rem; }
 .hero__title { font-size: clamp(2rem, 8vw, 5rem); line-height: 1; margin: 12px 0; }
-.hero__lead { max-width: 760px; font-size: clamp(1rem, 2.4vw, 1.3rem); }
-.cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.hero__lead { max-width: 760px; margin-inline: auto; font-size: clamp(1rem, 2.4vw, 1.3rem); }
+.cta-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 24px; }
 .button {
   display: inline-flex;
   align-items: center;
@@ -197,6 +197,16 @@ footer .container {
   font-size: 20px;
   letter-spacing: .2em;
 }
+.hero .hero__title {
+  border: 0;
+  color: var(--color-text);
+  background: transparent;
+  margin: 12px 0;
+  padding: 0;
+  font-size: clamp(2rem, 8vw, 5rem);
+  line-height: 1;
+  letter-spacing: .02em;
+}
 h2 { margin: 0 0 10px; font-size: 18px; color: var(--color-accent-2); }
 p { margin: 0 0 28px; font-size: 15px; line-height: 1.9; color: var(--color-text); }
 a { color: var(--color-accent-2); text-decoration: underline; }
@@ -215,6 +225,18 @@ a:hover { text-decoration: none; }
 .work-item { border-bottom: 1px solid rgba(0,255,102,.22); padding-bottom: 16px; }
 .work-item:last-child { border-bottom: 0; padding-bottom: 0; }
 .news-list { padding-left: 1.2rem; line-height: 1.9; }
+.status-label {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 3px 7px;
+  color: #000;
+  background: var(--color-accent);
+  border: 2px outset #fff;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.muted-note { color: var(--color-muted); }
+.sns__short { font-size: .68rem; font-family: Arial, sans-serif; font-weight: 700; letter-spacing: 0; }
 footer { border: 4px ridge var(--color-accent-2); color: var(--color-accent-2); background-color: #800080; }
 
 @media (min-width: 768px) {

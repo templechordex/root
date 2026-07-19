@@ -10,7 +10,7 @@
       ['WORKS', `${root}music.html#works`],
       ['PROFILE', `${root}music.html#profile`],
       ['ABOUT ENGLISH', `${root}about/index.html`],
-      ['LOG更新履歴', `${root}log.html`],
+      ['LOG', `${root}log.html`],
     ];
     const socials = [
       ['X', 'https://x.com/anji_teraoka', 'X'],

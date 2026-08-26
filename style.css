@@ -138,6 +138,7 @@ img { display:block; max-width:100%; }
   box-shadow:8px 8px 0 rgba(155,108,255,.5),0 0 28px rgba(214,255,63,.12);
 }
 .hero-bottom p { margin:0; }
+.hero-updated { margin-bottom:10px!important; color:var(--muted); font-size:.68rem; font-weight:800; letter-spacing:.1em; }
 .hero-statement { color:var(--acid); font-size:clamp(1.35rem,2.6vw,2.3rem); line-height:1.25; font-weight:800; }
 .hero-copy { color:var(--cream); font-size:.98rem; line-height:2; }
 .orbit { position:absolute; z-index:1; border-radius:50%; }
